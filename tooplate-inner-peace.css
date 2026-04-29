@@ -478,6 +478,39 @@ nav {
 	}
 }
 
+.role-selector {
+	display: flex;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.role-selector input[type="radio"] {
+	display: none;
+	/* Sembunyikan radio button asli */
+}
+
+.role-selector label {
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 8px;
+	transition: 0.3s;
+	font-weight: 600;
+	color: #666;
+}
+
+/* Style saat dipilih */
+.role-selector input[type="radio"]:checked+label {
+	background: #4A90E2;
+	/* Warna primer */
+	color: white;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* About Section - Complete Redesign */
 #about {
 	padding: 5rem 5%;
@@ -1922,6 +1955,8 @@ footer {
 		grid-template-columns: 1fr;
 	}
 }
+
+
 
 /* Login Page Specific Styles */
 .login-page {
